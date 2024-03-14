@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hungry Llama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home">
+        <h1>Where Good Food Meets Great Company - The Hungry Llama</h1>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to The Hungry Llama, a family-owned restaurant that offers a unique and unforgettable dining experience. Our restaurant is inspired by the bold flavors and warm hospitality of South America, and we pride ourselves on serving fresh and locally sourced ingredients.</p>
+        </div>
+    </section>
+
+    <section class="menu-highlights">
+        <div class="container">
+            <h2>Menu Highlights</h2>
+            <div class="menu-item">
+                <img src="chicken-salad.jpg" alt="Chicken Caesar Salad">
+                <h3>Chicken Caesar Salad</h3>
+                <p>Romaine Lettuce, Grilled Chicken, Parmesan Cheese, and Caesar Dressing.</p>
+            </div>
+            <!-- Add more menu items here -->
+        </div>
+    </section>
+<section id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>1404 Foodroad</p>
+    <p>Phone: 555-3212</p>
+    <p>Email: <a href="mailto:frontdesk@hungryllama.com">frontdesk@hungryllama.com</a></p>
+    <p>© 2024 The Hungry Llama Restaurant. All rights reserved.</p>
+</footer>
+</body>
+</html>

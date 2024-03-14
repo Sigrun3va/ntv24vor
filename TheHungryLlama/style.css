@@ -1,0 +1,131 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero Section */
+#home {
+    background: url('your-hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* About Us Section */
+#about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#about .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Sample Menu Highlights */
+.menu-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.menu-item {
+    flex-basis: calc(33.333% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+#contact .container {
+    max-width: 600px;
+    margin: auto;
+}
+
+form > label {
+    display: block;
+    margin-top: 10px;
+}
+
+form > input, form > select, form > textarea, button[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .menu-highlights {
+        flex-direction: column;
+    }
+    
+    .menu-item {
+        flex-basis: 90%;
+    }
+}
