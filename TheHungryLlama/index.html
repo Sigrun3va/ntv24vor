@@ -20,27 +20,48 @@
     
     <!-- Hero Section -->
     <section id="home">
-        <h1>Where Good Food Meets Great Company - The Hungry Llama</h1>
+    </section>
+
+    <section class="menu-highlights">
+        <h2>Menu Highlights</h2>
+        <div class="container">
+            <div class="menu-item">
+                <img src="chickencaesar.png" alt="Chicken Caesar Salad">
+                <div class="menu-description">
+                    <h3>Chicken Caesar Salad</h3>
+                    <p>Romaine Lettuce, Grilled Chicken, Parmesan Cheese, and Caesar Dressing.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="buffalowrap.png" alt="Buffalo Chicken Wrap">
+                <div class="menu-description">
+                    <h3>Buffalo Chicken Wrap</h3>
+                    <p>Buffalo Chicken Wrap with Crispy Chicken Tenders, Mixed Greens, Blue Cheese Crumbles, and Buffalo Ranch Dressing in a Flour Tortilla.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="panini.png" alt="Chicken Panini">
+                <div class="menu-description">
+                    <h3>Chicken Panini</h3>
+                    <p>Grilled Chicken Panini with Mozzarella Cheese, Roasted Red Peppers, and Pesto Mayo.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="asian.png" alt="Asian Chicken Salad">
+                <div class="menu-description">
+                    <h3>Asian Chicken Salad</h3>
+                    <p>Asian Chicken Salad with Shredded Chicken, Mandarin Oranges, Crispy Wontons, and Sesame Ginger Dressing.</p>
+                </div>
+            </div>
     </section>
 
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>Welcome to The Hungry Llama, a family-owned restaurant that offers a unique and unforgettable dining experience. Our restaurant is inspired by the bold flavors and warm hospitality of South America, and we pride ourselves on serving fresh and locally sourced ingredients.</p>
+            <p>Welcome to The Hungry Llama, a family-owned restaurant that offers a unique and unforgettable dining experience. Our restaurant is inspired by the bold flavors and warm hospitality of South America, and we pride ourselves on serving fresh and locally sourced ingredients. At The Hungry Llama, we believe that food is not just a necessity, but an adventure, and we aim to take our customers on a culinary journey through our carefully crafted menu. Whether you're in the mood for a hearty meal or a light bite, our diverse menu has something for everyone. We also offer a wide selection of refreshing beverages and cocktails to complement your meal. Come join us at The Hungry Llama, where good food meets great company.</p>
         </div>
     </section>
 
-    <section class="menu-highlights">
-        <div class="container">
-            <h2>Menu Highlights</h2>
-            <div class="menu-item">
-                <img src="chicken-salad.jpg" alt="Chicken Caesar Salad">
-                <h3>Chicken Caesar Salad</h3>
-                <p>Romaine Lettuce, Grilled Chicken, Parmesan Cheese, and Caesar Dressing.</p>
-            </div>
-            <!-- Add more menu items here -->
-        </div>
-    </section>
 <section id="contact">
     <div class="container">
         <h2>Contact Us</h2>
@@ -50,6 +71,13 @@
             
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
+            
+            <label for="inquiry">Inquiry Type</label>
+            <select id="inquiry" name="inquiry">
+            <option value="general">General Request</option>
+            <option value="restaurants">Restaurants</option>
+            <option value="office">Office</option>
+            </select>
             
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="4" required></textarea>

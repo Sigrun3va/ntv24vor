@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,76 +6,118 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f3;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
 }
 
 /* Navigation Bar */
 header {
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    background-color: #201e1e;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    color: #fff;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-nav ul li {
-    margin: 0 15px;
+    justify-content: space-around; 
+    padding: 10px 0;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #b4b4b4;
+    padding: 10px;
+    transition: color 0.3s;
 }
 
-/* Hero Section */
+nav ul li a:hover {
+    color: #8d6f1c;
+}
+
+/* Hero */
 #home {
-    background: url('your-hero-image.jpg') no-repeat center center/cover;
+    background: url('hero.png') no-repeat center center;
+    background-size: 100% auto;
     color: #fff;
-    padding: 100px 20px;
+    padding: 100px 0;
     text-align: center;
+    min-height: 900px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* About Us Section */
+/* Menu Highlights */
+.menu-highlights {
+    background-color: #f9f9f9; 
+    padding: 50px 20px; 
+    text-align: center; 
+}
+
+.menu-highlights h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 60px; 
+    color: #333; 
+}
+
+.menu-highlights .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px; 
+}
+
+.menu-item {
+    background-color: #ffffff; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+}
+
+.menu-item img {
+    width: 100%; 
+    object-fit: cover; 
+    height: 200px; 
+}
+
+.menu-description {
+    padding: 20px; 
+}
+
+.menu-description h3 {
+    font-size: 1.4rem; 
+    color: #333; 
+    margin: 15px 0 10px; 
+}
+
+.menu-description p {
+    font-size: 1rem; 
+    color: #666; 
+    line-height: 1.5; 
+}
+
+/* About Us */
 #about {
     text-align: center;
-    padding: 50px 20px;
+    padding: 30px 30px;
+    background-color: #ffffff;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
 }
 
 #about .container {
     max-width: 800px;
     margin: auto;
+    color: #333;
 }
 
-/* Sample Menu Highlights */
-.menu-highlights {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 50px 20px;
-}
-
-.menu-item {
-    flex-basis: calc(33.333% - 20px);
-    margin: 10px;
-    text-align: center;
-}
-
-.menu-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Contact Section */
+/* Contact Us */
 #contact {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     padding: 50px 20px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
 }
 
 #contact .container {
@@ -87,24 +128,33 @@ nav ul li a {
 form > label {
     display: block;
     margin-top: 10px;
+    color: #333;
 }
 
 form > input, form > select, form > textarea, button[type="submit"] {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
 }
 
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: #8d6f1c;
     color: white;
     border: none;
     cursor: pointer;
+    margin-top: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
     margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #7a5e19;
 }
 
 /* Footer */
@@ -112,20 +162,41 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
-    background-color: #f8f9fa;
+    background-color: #201e1e;
+    color: #b4b4b4;
 }
 
-/* Responsive Design */
+/* Responsiveness */
 @media (max-width: 768px) {
-    nav ul {
+
+    .menu-highlights .container {
         flex-direction: column;
+        align-items: center;
     }
-    
-    .menu-highlights {
-        flex-direction: column;
-    }
-    
     .menu-item {
-        flex-basis: 90%;
+        flex-basis: 100%;
+    }
+
+    .menu-item img,
+    .menu-description {
+        width: 100%;
+    }
+
+    #home {
+        padding: 50px 0;
+        min-height: 300px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #home {
+
+        min-height: 200px; 
+    }
+
+    @media (max-width: 320px) {
+        .menu-highlights .container {
+            grid-template-columns: 1fr; 
+        }
     }
 }
